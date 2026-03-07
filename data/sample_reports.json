@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Bank impersonation texts reported in Northside",
+    "description": "Multiple residents received text messages claiming their debit cards were locked and asking them to click a login link.",
+    "category": "phishing",
+    "severity": "high",
+    "location": "Northside",
+    "status": "new",
+    "created_at": "2026-03-07T09:00:00",
+    "verified": true
+  },
+  {
+    "title": "Fake IRS email targeting local residents",
+    "description": "Residents received emails claiming they owed back taxes and must pay immediately via wire transfer to avoid arrest.",
+    "category": "phishing",
+    "severity": "high",
+    "location": "Eastside",
+    "status": "new",
+    "created_at": "2026-03-06T14:30:00",
+    "verified": true
+  },
+  {
+    "title": "Suspicious login page mimicking local credit union",
+    "description": "A fraudulent website nearly identical to Northside Credit Union's login page was reported by three members.",
+    "category": "phishing",
+    "severity": "medium",
+    "location": "Westside",
+    "status": "reviewed",
+    "created_at": "2026-03-05T11:00:00",
+    "verified": false
+  },
+  {
+    "title": "Suspicious utility shutoff calls targeting seniors",
+    "description": "Callers claimed to represent the electric company and demanded immediate gift card payment to prevent service interruption.",
+    "category": "utility_scam",
+    "severity": "high",
+    "location": "Downtown",
+    "status": "new",
+    "created_at": "2026-03-07T10:15:00",
+    "verified": true
+  },
+  {
+    "title": "Water company impersonation calls",
+    "description": "Residents reported calls from someone claiming to be the city water department demanding payment or face same-day shutoff.",
+    "category": "utility_scam",
+    "severity": "medium",
+    "location": "Southside",
+    "status": "new",
+    "created_at": "2026-03-06T09:45:00",
+    "verified": true
+  },
+  {
+    "title": "Medicare card renewal phone scam",
+    "description": "Callers posing as Medicare representatives asked seniors to confirm their Social Security numbers to receive new cards.",
+    "category": "phone_scam",
+    "severity": "high",
+    "location": "Northside",
+    "status": "new",
+    "created_at": "2026-03-07T08:00:00",
+    "verified": true
+  },
+  {
+    "title": "Lottery winnings robocall campaign",
+    "description": "Automated calls informed residents they won a prize and must provide banking information to claim it.",
+    "category": "phone_scam",
+    "severity": "medium",
+    "location": "Eastside",
+    "status": "resolved",
+    "created_at": "2026-03-04T16:00:00",
+    "verified": false
+  },
+  {
+    "title": "Local gym chain customer data exposed",
+    "description": "A regional gym chain reported unauthorized access to member records including emails, phone numbers, and payment info.",
+    "category": "data_breach",
+    "severity": "high",
+    "location": "Downtown",
+    "status": "reviewed",
+    "created_at": "2026-03-06T12:00:00",
+    "verified": true
+  },
+  {
+    "title": "Restaurant loyalty app breach reported",
+    "description": "Users of a local restaurant loyalty app were notified that their account credentials may have been compromised.",
+    "category": "data_breach",
+    "severity": "medium",
+    "location": "Westside",
+    "status": "new",
+    "created_at": "2026-03-05T15:30:00",
+    "verified": false
+  },
+  {
+    "title": "Fake contractor overcharging elderly residents",
+    "description": "A contractor approached several elderly homeowners offering driveway repairs, collected large upfront payments, and never returned.",
+    "category": "fraud",
+    "severity": "high",
+    "location": "Southside",
+    "status": "new",
+    "created_at": "2026-03-07T11:00:00",
+    "verified": true
+  },
+  {
+    "title": "Counterfeit event tickets sold online",
+    "description": "Residents reported purchasing tickets to a local concert through an unofficial site and being denied entry at the venue.",
+    "category": "fraud",
+    "severity": "low",
+    "location": "Downtown",
+    "status": "resolved",
+    "created_at": "2026-03-03T10:00:00",
+    "verified": false
+  },
+  {
+    "title": "Stranger harassment reported near community park",
+    "description": "Several residents reported being followed and verbally harassed by an unknown individual near Riverside Park in the evenings.",
+    "category": "physical_safety",
+    "severity": "high",
+    "location": "Riverside",
+    "status": "new",
+    "created_at": "2026-03-07T07:30:00",
+    "verified": true
+  },
+  {
+    "title": "Unsecured construction site attracting trespassers",
+    "description": "Residents reported that a construction site on Maple Ave has been left unsecured overnight, with minors observed entering the area.",
+    "category": "physical_safety",
+    "severity": "medium",
+    "location": "Maple Ave",
+    "status": "reviewed",
+    "created_at": "2026-03-06T18:00:00",
+    "verified": false
+  }
+]
