@@ -1,7 +1,9 @@
 # Community Guardian
 
 **Candidate:** Timothy Holt
+
 **Scenario:** Community Safety & Digital Wellness
+
 **Estimated Time Spent:** ~5 hours
 
 ---
@@ -65,3 +67,4 @@ I would add user authentication to the web app so report submissions would be ti
 ## Demo Video
 
 [Link to demo video](YOUR_VIDEO_LINK_HERE)
+
