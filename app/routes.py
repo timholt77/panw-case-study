@@ -1,3 +1,5 @@
+from .db import fetch_reports, insert_report, update_report_status, get_reports_for_digest
+from .services.digest_service import generate_digest
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from .db import fetch_reports, insert_report, update_report_status
 from datetime import datetime
@@ -90,3 +92,18 @@ def update_status(report_id):
     update_report_status(report_id, new_status)
     flash('Status updated successfully.', 'success')
     return redirect(url_for('routes.index'))
+
+@routes_bp.route('/digest')
+def digest():
+    search = request.args.get('search', '').strip()
+    category = request.args.get('category', '')
+    severity = request.args.get('severity', '')
+    status = request.args.get('status', '')
+    reports = get_reports_for_digest(
+        search=search or None,
+        category=category or None,
+        severity=severity or None,
+        status=status or None
+    )
+    digest_data = generate_digest(reports)
+    return render_template('digest.html', digest=digest_data)

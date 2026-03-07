@@ -13,3 +13,7 @@ nav a { margin-right: 15px; text-decoration: none; font-weight: bold; }
 form { margin-bottom: 20px; }
 input, select, textarea { margin: 5px 0 10px 0; padding: 6px; width: 100%; box-sizing: border-box; }
 button { padding: 8px 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; }
+.digest-source { color: #555; font-style: italic; }
+.digest-section { background: #f9f9f9; border-radius: 6px; padding: 15px; margin-bottom: 20px; }
+.digest-section h2 { margin-top: 0; }
+.digest-section ul { padding-left: 20px; line-height: 1.8; }

@@ -1,5 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Safety Digest</h1>
-<p>Coming soon.</p>
+<h1>Community Safety Digest</h1>
+
+<p class="digest-source">
+    {% if digest.source == 'ai' %}
+        Digest source: <strong>AI Generated</strong>
+    {% else %}
+        Digest source: <strong>Fallback (AI unavailable)</strong>
+    {% endif %}
+    &nbsp;|&nbsp; Reports included: <strong>{{ digest.report_count }}</strong>
+</p>
+
+<div class="digest-section">
+    <h2>Summary</h2>
+    <p>{{ digest.summary }}</p>
+</div>
+
+<div class="digest-section">
+    <h2>What Matters</h2>
+    <ul>
+        {% for item in digest.what_matters %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="digest-section">
+    <h2>What To Do</h2>
+    <ul>
+        {% for item in digest.what_to_do %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<a href="/">Back to Reports</a>
 {% endblock %}
