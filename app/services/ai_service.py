@@ -33,6 +33,8 @@ Return ONLY a JSON object with these exact keys:
 - what_matters: a list of 2-3 short strings highlighting key concerns
 - what_to_do: a list of 2-4 short actionable steps
 
+Do not include any markdown, backticks, or extra text. Just the raw JSON object.
+
 Reports:
 {report_text}"""
 
