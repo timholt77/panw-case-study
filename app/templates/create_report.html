@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Add New Report</h1>
+
+<form method="POST" action="/reports">
+    <label>Title
+        <input type="text" name="title" value="{{ form_data.title if form_data else '' }}" required>
+    </label>
+    <label>Description
+        <textarea name="description">{{ form_data.description if form_data else '' }}</textarea>
+    </label>
+    <label>Category
+        <select name="category">
+            {% for c in categories %}
+                <option value="{{ c }}" {% if form_data and form_data.category == c %}selected{% endif %}>{{ c }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Severity
+        <select name="severity">
+            {% for s in severities %}
+                <option value="{{ s }}" {% if form_data and form_data.severity == s %}selected{% endif %}>{{ s }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Location
+        <input type="text" name="location" value="{{ form_data.location if form_data else '' }}">
+    </label>
+    <label>
+        <input type="checkbox" name="verified"> Verified
+    </label>
+    <button type="submit">Submit Report</button>
+    <a href="/">Cancel</a>
+</form>
+{% endblock %}
