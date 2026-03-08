@@ -68,4 +68,7 @@ I would add user authentication to the web app so report submissions would be ti
 
 [Link to demo video](YOUR_VIDEO_LINK_HERE)
 
+## [View Design Documentation](DESIGN.md)
+
+
 
