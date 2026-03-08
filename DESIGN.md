@@ -7,7 +7,7 @@ App Name: SignalSafe AI
 ### Overview
 SignalSafe AI is a Flask web app that helps community members review safety incident reports and generate a plain-language digest summarizing key concerns and recommended actions. The app is designed with simplicity and reliability in mind, targeting non-technical users including elderly community members, and neighborhood groups/members.
 
-### Design:
+### Design
 - The core design goal was to build a complete, demoable app within the 4-6 hour timeframe without sacrificing functionality.
 - For the frontend, a Flask app with Jinja2 templates was chosen over React because it eliminated build overhead, kept the codebase a single language, and was fast to iterate/test on (no API layer or state management to maintain).
 - I chose SQLite for the database because it required zero setup, ships with Python's standard library, and was best for a local demo using synthetic data.
@@ -15,7 +15,7 @@ SignalSafe AI is a Flask web app that helps community members review safety inci
 - The AI capability was intentionally scoped to a single function (digest/summary generation).
 - The fallback digest/summary uses deterministic rule-based logic tied to report categories, so the app always produces a useful output regardless of API availability.
 
-### Tech Stack:
+### Tech Stack
 I wanted every component in my stack to be lightweight, well-documented, and fast to set up. There are no external services, no database servers, and no build steps required to run the app locally.
 - The backend is Python 3.10 with Flask as the web framework and Jinja2 for server-side HTML templating.
 - The database is SQLite accessed via Python's built-in sqlite3 module with no ORM.
@@ -24,7 +24,7 @@ I wanted every component in my stack to be lightweight, well-documented, and fas
 - The test suite uses pytest.
 - The frontend is HTML and CSS with no JavaScript framework.
 
-### Future Enhancements:
+### Future Enhancements
 - Adding user authentication so report submissions and status updates are tied to verified identities rather than anaonymous/open to anyone.
 - A heat map visualization showing report locations geographically would help neighborhood groups and elderly users to identify clusters of incidents in specific areas.
 - On the AI side, allowing users to ask follow-up questions about the digest rather than receiving a static summary would make the feature more useful.
